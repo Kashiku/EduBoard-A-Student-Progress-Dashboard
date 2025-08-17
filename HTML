@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EduBoard Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="mobile-nav">
+        <div class="logo">A Student Progress Dashboard</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+    <aside class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Subjects</a></li>
+            <li><a href="#">Attendance</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <header class="topbar">
+            <div class="profile-info">
+                <img src="https://th.bing.com/th/id/OIP.jQnMsFzpPhvlg_qcc5_s3AHaLH?w=143&h=215&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Avatar" class="avatar" />
+                <span class="raju">Raju</span>
+            </div>
+        </header>
+        <section class="overview-cards">
+            <div class="card">GPA: <strong>8.8</strong></div>
+            <div class="card">Attendance: <strong>92%</strong></div>
+            <div class="card">Assignments Due: <strong>3</strong></div>
+            <div class="card">Credits: <strong>120</strong></div>
+        </section>
+        <section class="progress-table">
+            <h2>Subject Progress</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Completion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C</td>
+                        <td>
+                            <div class="progress-bar"><span style="width: 80%;"></span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DSA</td>
+                        <td>
+                            <div class="progress-bar"><span style="width: 65%;"></span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="deadlines">
+            <h2>Upcoming Deadlines</h2>
+            <ul>
+                <li><span class="date-badge">Aug 20</span> Submit C Assignment</li>
+                <li><span class="date-badge">Aug 22</span> DSA Quiz</li>
+            </ul>
+        </section>
+
+        <!-- Profile Info -->
+        <section class="profile-card">
+            <h2>Student Profile</h2>
+            <p><strong>Name:</strong> Raju</p>
+            <p><strong>Roll No:</strong> 123456A</p>
+            <p><strong>Email:</strong> raju@example.com</p>
+            <p><strong>College:</strong> ABC University</p>
+            <p><strong>Department:</strong> Computer Science</p>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('menu-toggle').onclick = function() {
+            document.getElementById('sidebar').classList.toggle('active');
+        };
+    </script>
+</body>
+
+</html>
